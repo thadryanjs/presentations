@@ -9,7 +9,9 @@ output:
 title: "An overview of 'Pediatric Cancer by Race, Ethnicity, and Region in the United States' (Rees et al.)"
 subtitle: "Thadryan J. Sweeney"
 fontsize: 12pt
-bibliography: JournalClub1Presentation.bib  
+bibliography: JournalClub1Presentation.bib
+header-includes:
+  - \AtBeginEnvironment{CSLReferences}{\tiny}
 ---
 
 # Authors
@@ -24,7 +26,7 @@ bibliography: JournalClub1Presentation.bib
 
  - Siegel et al published a descriptive study on the incidence of cancer in children in the US (@siegelGeographicVariationPediatric2018).
  
- - "In a 2018 descriptive study, cancer incidence in children (age 0-19) in diagnosis years 2003-2014 was reported as being highest in New Hampshire and in the Northeast region" @reesPediatricCancerRace.
+ - "In a 2018 descriptive study, cancer incidence in children (age 0-19) in diagnosis years 2003-2014 was reported as being highest in New Hampshire and in the Northeast region" (@reesPediatricCancerRace).
  
  - The study was descriptive, and the authors set out to formalize the results to build on the findings.
  
@@ -34,7 +36,7 @@ bibliography: JournalClub1Presentation.bib
 
 # What is CiNA?
 
-- The Cancer in North America (CiNA): "...cancer registries, governmental agencies, professional associations, and private groups in North America interested in enhancing the quality and use of cancer registry data." @NAACCRNAACCR2016
+- The Cancer in North America (CiNA): "...cancer registries, governmental agencies, professional associations, and private groups in North America interested in enhancing the quality and use of cancer registry data." (@NAACCRNAACCR2016)
 
 ![](assets/naaccr.png){height=75% width=75%}
 
@@ -48,7 +50,7 @@ bibliography: JournalClub1Presentation.bib
 
 # The prequel: Overview of Siegel, et al.
 
- - These are CDC reports @MorbidityMortalityWeekly2022
+ - These are CDC reports (@MorbidityMortalityWeekly2022)
  - What was their contribution?
  
 
@@ -82,6 +84,8 @@ in time or one population at two or more points in time." @kleinAgeAdjustmentUsi
  - Remove states with permission issues, low-quality data, smaller regions to avoid double counting.
 
  - Remove cases from autopsy or death certificates.
+ 
+ - Calculate SE and CIs using Tiwari’s method that adjusts for the non-independence in regions @tiwariEfficientIntervalEstimation2006
 
 :::
 
@@ -96,7 +100,16 @@ From @reesPediatricCancerRace.
 
 
 
-# Section 2
+# Technical notes on Rees, Tiwari 
+
+  - Rees uses Bonferoni correction (@reesPediatricCancerRace)
+
+  - Rees explains the non-independence as being "introduced by
+the overlap between the whole group (e.g., Northeast region) and subgroup (e.g., New
+Hampshire)." (@reesPediatricCancerRace).
+
+  - Tiwari built on previous work (@fayConfidenceIntervalsDirectly1997) that assumed $\rho=0$ in the F-distribution it used, modifying the method to account for non-independence.
+
 
 
 # Section 3
@@ -113,4 +126,6 @@ From @reesPediatricCancerRace.
 :::
 ::::::
 
+
 # References {.allowframebreaks}
+
