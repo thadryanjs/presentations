@@ -12,11 +12,14 @@ fontsize: 12pt
 bibliography: JournalClub1Presentation.bib
 header-includes:
   - \AtBeginEnvironment{CSLReferences}{\tiny}
-  - \definecolor{MyBackground}{rgb}{0.3686, 0.5255, 0.6235}
-  - \setbeamercolor{background canvas}{bg=MyBackground}
-
+  - \definecolor{ForestGreen}{RGB}{18, 49, 43}
+  - \definecolor{DartGreen}{RGB}{0, 105, 62}
+  - \definecolor{WarmGrey}{RGB}{112, 112, 112}
+  - \definecolor{LightGrey}{RGB}{226, 226, 226}
+  - \setbeamercolor{background canvas}{bg=ForestGreen}
+  - \setbeamercolor{titlelike}{fg=DartGreen}
+  - \setbeamercolor{normal text}{fg=LightGrey}
 ---
-
 
 
 # Authors
@@ -207,7 +210,7 @@ All quotes: @reesPediatricCancerRace
 :::
 ::::::
 
-# Findings of Rees, et al: Socioeconomic factors
+# Findings of Rees, et al: Socioeconomics
 
 ![](assets/cartoon.png){height=100%, width=100%}
 
