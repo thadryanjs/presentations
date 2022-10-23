@@ -6,8 +6,9 @@ output:
     theme: "default"
     colortheme: "fly"
     fonttheme: "structurebold"
-title: "An overview of 'Pediatric Cancer by Race, Ethnicity, and Region in the United States' (Rees et al.)"
-subtitle: "Thadryan J. Sweeney"
+title: "An overview of 'Pediatric Cancer by Race, Ethnicity, and Region in the United States' (Rees et al.) and relevant background literature."
+author: "Thadryan J. Sweeney"
+# subtitle: "Thadryan J. Sweeney"
 fontsize: 12pt
 bibliography: JournalClub1Presentation.bib
 header-includes:
@@ -18,6 +19,7 @@ header-includes:
   - \definecolor{LightGrey}{RGB}{226, 226, 226}
   - \setbeamercolor{background canvas}{bg=ForestGreen}
   - \setbeamercolor{titlelike}{fg=DartGreen}
+  - \setbeamercolor{subtitle}{fg=DartGreen}     
   - \setbeamercolor{normal text}{fg=LightGrey}
 ---
 
@@ -107,12 +109,48 @@ distribution to eliminate differences in crude rates in populations of interest 
 populations’ age distributions. This adjustment is usually done when comparing two or more populations at one point
 in time or one population at two or more points in time." @kleinAgeAdjustmentUsing2001
 
+# Let's go to the map...
+
+:::::: {.columns}
+::: {.column width=5%}
+:::
+::: {.column width=95%}
+![](assets/map.png){height=85% width=85%}
+
+@siegelGeographicVariationPediatric2018 | ICCC = International Classification of Childhood Cancer.
+:::
+::::::
 
 
 
 # Rees et al
 
-## The Main Event 
+## The Main Event
+
+# The "Northeast"?
+
+
+:::::: {.columns}
+::: {.column width=35%}
+  - Connecticut
+  - Maine
+  - Massachusetts
+  - New Hampshire
+  - New Jersey
+  - New York
+  - Pennsylvania
+  - Rhode Island
+  - Vermont.
+:::
+::: {.column width=65%}
+
+![](assets/cartoon2.png){height=90% width=90%}
+
+@millerCartoonStockSearchResults2019
+
+:::
+::::::
+
 
 # Overview of Rees, et al
 
@@ -137,37 +175,6 @@ From @reesPediatricCancerRace.
 
 :::
 ::::::
-
-# The "Northeast"?
-
-
-:::::: {.columns}
-::: {.column width=35%}
-  - Connecticut
-  - Maine
-  - Massachusetts
-  - New Hampshire
-  - New Jersey
-  - New York
-  - Pennsylvania
-  - Rhode Island
-  - Vermont.
-:::
-::: {.column width=65%}
-
-![](assets/cartoon2.png){height=90% width=90%}
-
-@millerCartoonStockSearchResults2019
-
-
-
-:::
-::::::
-
-
-
-
-
 
 
 
@@ -210,24 +217,53 @@ All quotes: @reesPediatricCancerRace
 :::
 ::::::
 
-# Findings of Rees, et al: Socioeconomics
+# Discussion of Rees, et al: Socioeconomics 1
 
-![](assets/cartoon.png){height=100%, width=100%}
-
-
-
+![](assets/cartoon.png){height=95%, width=95%}
 @mankoffBobMankoffCartoonStock2006
 
 
 
-# Result:
+# Discussion of Rees, et al: Socioeconomics 2
 
-:::::: {.columns}
-::: {.column width=35%}
-:::
-::: {.column width=65%}
-:::
-::::::
+ - Significant variations in race/ethnicity distribution across states make race adjustment crucial (NY vs NH).
+ 
+ - Higher incidence of some cancers in the NE were not seen in the Hispanic population and Hispanic children have lower incidence of ALL and germ-line tumors than other places in the US.
+
+ - Notes there is some inconsistency in the literature with regards to the last point, perhaps due to diversity of subgroups in the "Hispanic" category.
+ 
+ - Notes that multiracial children are not captured by registries but birth-certificate studies have been done, suggesting they follow the risk of the minority parent.
+
+@reesPediatricCancerRace
+
+
+
+# Discussion of Rees, et al: Socioeconomics 3
+
+ - Notes adult cancer is also higher in the Northeast.
+ 
+ - Notes few pediatric cancer risk factors are known besides maternal age.
+ 
+ - Notes higher socioeconomic status is a risk factor, Northeast is relatively affluent.
+ 
+ - Suggests higher SES may be a proxy for maternal age (more education, etc).
+ 
+ - Notes higher SES could lead to increased exposure to diagnostic testing (CT scans).
+ 
+ - Also notes evidence NE children are less exposed to CTs.
+ 
+ @reesPediatricCancerRace
+ 
+
+
+# Summary 
+
+ - Added statistical rigor to observed phenomena.
+ 
+ - Confirmed significant increase in pediatric cancer in the NE.
+ 
+ - Stratified and described patterns related to race for future study
+
 
 
 # References {.allowframebreaks}
