@@ -4,7 +4,7 @@ knit: (function(inputFile, encoding) {
 output:
   beamer_presentation:
     theme: "default"
-    colortheme: "default"
+    colortheme: "fly"
     fonttheme: "structurebold"
 title: "An overview of 'Pediatric Cancer by Race, Ethnicity, and Region in the United States' (Rees et al.)"
 subtitle: "Thadryan J. Sweeney"
@@ -12,15 +12,24 @@ fontsize: 12pt
 bibliography: JournalClub1Presentation.bib
 header-includes:
   - \AtBeginEnvironment{CSLReferences}{\tiny}
+  - \definecolor{MyBackground}{rgb}{0.3686, 0.5255, 0.6235}
+  - \setbeamercolor{background canvas}{bg=MyBackground}
+
 ---
+
+
 
 # Authors
 
 ![](assets/title.png)
 
+
+
 # TL;DNR
 
 > There was study done that indicated the northeast region of the US had the highest cancer incidence in children. The did a follow up to formally test this, and found it was true.
+
+
 
 # Motivation & Relevant Parties
 
@@ -34,11 +43,30 @@ header-includes:
 
 
 
+# Background
+
+## Siegel et al, CiNA, Tiwari, et al, etc.
+
+
+
 # What is CiNA?
 
-- The Cancer in North America (CiNA): "...cancer registries, governmental agencies, professional associations, and private groups in North America interested in enhancing the quality and use of cancer registry data." (@NAACCRNAACCR2016)
+ The Cancer in North America (CiNA): "...cancer registries, governmental agencies, professional associations, and private groups in North America interested in enhancing the quality and use of cancer registry data." (@NAACCRNAACCR2016)
+ 
+:::::: {.columns}
+::: {.column width=15%}
 
+:::
+::: {.column width=85%}
 ![](assets/naaccr.png){height=75% width=75%}
+
+:::
+::::::
+
+
+
+
+
 
 # CiNA Sponsors
 
@@ -48,13 +76,19 @@ header-includes:
 :::
 ::::::
 
+
+
 # The prequel: Overview of Siegel, et al.
 
- - These are CDC reports (@MorbidityMortalityWeekly2022)
- - What was their contribution?
- 
+  These are CDC reports (@MorbidityMortalityWeekly2022)
 
-![](assets/summary.png){height=60%, width=60%}
+:::::: {.columns}
+::: {.column width=15%}
+:::
+::: {.column width=85%}
+![](assets/summary.png){height=70%, width=70%}
+:::
+::::::
 
 From @siegelGeographicVariationPediatric2018
  
@@ -65,14 +99,17 @@ From @siegelGeographicVariationPediatric2018
 
 - Built around Age-adjusted incidence of cancer among persons aged <20 years
     -   Used to adjust when comparing populations at different times.
-    -   "Age adjustment, using the direct method, is the
-application of observed age-specific rates to a standard age
-distribution to eliminate differences in crude rates in
-populations of interest that result from differences in the
-populations’ age distributions. This adjustment is usually
-done when comparing two or more populations at one point
+    -   "Age adjustment, using the direct method, is the application of observed age-specific rates to a standard age
+distribution to eliminate differences in crude rates in populations of interest that result from differences in the
+populations’ age distributions. This adjustment is usually done when comparing two or more populations at one point
 in time or one population at two or more points in time." @kleinAgeAdjustmentUsing2001
 
+
+
+
+# Rees et al
+
+## The Main Event 
 
 # Overview of Rees, et al
 
@@ -98,9 +135,41 @@ From @reesPediatricCancerRace.
 :::
 ::::::
 
+# The "Northeast"?
 
 
-# Technical notes on Rees, Tiwari 
+:::::: {.columns}
+::: {.column width=35%}
+  - Connecticut
+  - Maine
+  - Massachusetts
+  - New Hampshire
+  - New Jersey
+  - New York
+  - Pennsylvania
+  - Rhode Island
+  - Vermont.
+:::
+::: {.column width=65%}
+
+![](assets/cartoon2.png){height=90% width=90%}
+
+@millerCartoonStockSearchResults2019
+
+
+
+:::
+::::::
+
+
+
+
+
+
+
+
+
+# Technical notes
 
   - Rees uses Bonferoni correction (@reesPediatricCancerRace)
 
@@ -112,17 +181,48 @@ Hampshire)." (@reesPediatricCancerRace).
 
 
 
-# Section 3
+# Finding of Rees, et al: Overall 1
+
+ - "pediatric cancer incidence was significantly higher in the Northeast than other regions of the United States"
+ - This finding held "overall and among non-Hispanic Whites and Blacks, but not among Hispanics and other racial minorities"
+ - "there was no significant variability in incidence in the states within the Northeast overall or by race/ethnicity subgroup"
+ - "Overall, statistically significantly higher incidence was seen in the Northeast for lymphomas, central nervous system neoplasms, and neuroblastoma."
+ 
+All quotes: @reesPediatricCancerRace
+
+
+
+# Findings of Rees, et al: Overall 2
 
 :::::: {.columns}
 ::: {.column width=35%}
 
+- Pediatric cancer incidence is significantly higher in the Northeast
+
+- No significant variability in incidence within the Northeast region
 
 :::
-
 ::: {.column width=65%}
+![](assets/overall-fig.png){height=85% width=85%}
+:::
+::::::
+
+# Findings of Rees, et al: Socioeconomic factors
+
+![](assets/cartoon.png){height=100%, width=100%}
 
 
+
+@mankoffBobMankoffCartoonStock2006
+
+
+
+# Result:
+
+:::::: {.columns}
+::: {.column width=35%}
+:::
+::: {.column width=65%}
 :::
 ::::::
 
