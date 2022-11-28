@@ -1,0 +1,93 @@
+---
+title: "Preliminary analysis of EHR data for studying care networks"
+author: "Thadryan J. Sweeney"
+format:
+  pptx:
+    reference-doc: assets/dartmouth-dark-template.pptx
+---
+
+# Introduction
+
+ - What are some basic dispersion metrics we can infer from the EHRs?
+ - What proportion of patients saw differnt providers of interest? What about combinations of those providers?
+ - What is the distribution of weights in the provider-provider network?
+ - What is the distribution of care density in our cohort?
+ - For any of the above, do we observe variation between cancer types?
+
+# What is the distribution of weights in the provider-provider network?
+
+ - What is the distribution of care density in our cohort?
+ - For any of the above, do we observe variation between cancer types?
+ 
+# Zip codes as a proxy for geographic dispersion
+
+# Motivation & Logic
+ 
+ - Get a rough approximation of dispersion of patients in the network using the number of zipcode they have encounters in.
+
+ - By patient ID, how many unique zip code strings are observed?
+
+ - We observe a skewed distribution ranging from 1-7.
+
+# Histogram of number of zip codes by patient
+
+![](assets/test.png)
+
+# Creating a table 1
+
+# Creating variables of interest
+
+ - Did they see a surgeon?
+ - Did they see a radiation oncologist?
+ - Did they see a medical oncologist?
+ - Determined by:
+    - Getting a list of all providers they saw by NPI
+    - Extracting the specialty names associated with those IDs
+    - String matching relevant titles in "uniquified" list
+
+# Creating variables of interest 2
+
+  - Do they have a primary care in our network?
+    - Get a list of all the providers they saw as in the last slide
+    - Checking if a general practicioner or family care title appears
+  - Did they get surgery?
+  - Did they get hormone therapy?
+
+# Creating the network
+
+# The preliminary network analysis
+
+- Created a physician-physician network using `igraph` for R
+- Extracted the weights to asses relationships between physicians
+
+# Edge weights between porviders
+
+- Content
+
+# Investigating extreme values
+
+- Content
+
+# We observe some extremely high value in terms of the weights
+
+- Conent
+
+# Do the individuals with high weight correspong to high ???
+
+- Content
+
+# Edge weight outliers
+
+- Content
+
+# Edge weight correlates with ??? in high-volume providers
+
+- We observe the expected correlation
+
+# Care density
+
+- Content
+
+ What is the distribution of weights in the provider-provider network?
+ - What is the distribution of care density in our cohort?
+ - For any of the above, do we observe variation between cancer types?
