@@ -69,9 +69,50 @@ Comments: could be even shorter, read and cite a care density paper as most peop
 
 ## Edge weights between providers
 
-- Content
+- Extremely skewed distribution
+
+![](assets/images/edge-weight-doc2doc.png)
+
+## Edge weights between providers (zoomed)
+
+- Skewed, but comprehensible with viewed without outliers
+
+![](assets/images/edge-weight-zoomed.png)
 
 # Care density
+
+## Pollack et al
+
+- "To test whether patients whose providers frequently share patients with one another — what we term ‘care density’ — tend to have lower costs of care and likelihood of hospitalization."
+
+- "9,596 patients with congestive heart failure (CHF) and 52,688 with diabetes who received care during 2009 - enrolled in five large, private insurance plans across the US covering employer-sponsored and Medicare Advantage enrollees"
+
+## What is the metric?
+
+Where:
+
+- "n is the number of distinct doctors that patient p saw"
+- "m is the total number of possible pairs of doctors"
+- "w is the number of shared patients for each pair of doctors"
+
+![](assets/images/formula.png)
+
+## What is the metric1?
+
+:::: {.columns}
+
+::: {.column width="35%"}
+Where:
+- "n is the number of distinct doctors that patient p saw"
+- "m is the total number of possible pairs of doctors"
+- "w is the number of shared patients for each pair of doctors"
+:::
+
+::: {.column width="65%"}
+![](assets/images/formula.png)
+:::
+
+::::
 
 ## More
 
