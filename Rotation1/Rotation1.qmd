@@ -33,7 +33,7 @@ Comments: could be even shorter, read and cite a care density paper as most peop
 
 # The network
 
-## What is the distribution of weights in the provider-provider network?
+## Distribution of weights in the provider-provider network
 
 - What is the distribution of care density in our cohort?
 - For any of the above, do we observe variation between cancer types?
@@ -50,7 +50,8 @@ Comments: could be even shorter, read and cite a care density paper as most peop
 
 :::: {.columns}
 ::: {.column}
-- What the here
+- Will see more on care density later 
+- Number of zip codes range from 1-7
 :::
 
 ::: {.column}
@@ -159,3 +160,74 @@ Comments: could be even shorter, read and cite a care density paper as most peop
 - "Third, we were unable to determine structural features of the relationships between physicians (e.g. being members of a group practice or IPA).
 
 - "Fourth, we relied on total costs as the primary outcome measure as claims data are limited in their ability to attribute costs to particular conditions."
+
+# Care Density in our study
+
+## Care Density by diagnosis
+
+:::: {.columns}
+
+::: {.column width="35%"}
+ - Skewed distribution
+ - Similar overall shape
+:::
+
+::: {.column width="65%"}
+![](assets/images/care-density.png)
+:::
+
+::::
+
+## Care Density by PCP in-network
+
+:::: {.columns}
+
+::: {.column width="35%"}
+ - Skewed distribution
+ - Similar overall shape
+:::
+
+::: {.column width="65%"}
+![](assets/images/care-density-by-pcp-in-net.png)
+:::
+
+::::
+
+## Care Density by number of providers
+
+:::: {.columns}
+
+ - Skewed distribution
+ - Similar overall shape
+::: {.column width="35%"}
+ - Here 
+ - There 
+ - Everywhere
+:::
+
+::: {.column width="65%"}
+![](assets/images/care-density-and-num-prov-seen.png)
+:::
+
+::::
+
+
+
+
+
+
+## Templates
+
+:::: {.columns}
+
+::: {.column width="35%"}
+ - Here 
+ - There 
+ - Everywhere
+:::
+
+::: {.column width="65%"}
+![](assets/images/network.png)
+:::
+
+::::
