@@ -21,6 +21,18 @@ Comments: could be even shorter, read and cite a care density paper as most peop
 - What is the distribution of care density in our cohort?
 - For any of the above, do we observe variation between cancer types?
 
+# Table 1
+
+## Table 1(a)
+
+![](assets/images/table1-1.png)
+
+## Table 2(b)
+
+![](assets/images/table1-2.png)
+
+# The network
+
 ## What is the distribution of weights in the provider-provider network?
 
 - What is the distribution of care density in our cohort?
@@ -34,11 +46,18 @@ Comments: could be even shorter, read and cite a care density paper as most peop
 - By patient ID, how many unique zip code strings are observed?
 - We observe a skewed distribution ranging from ???.
 
-## Histogram of zip codes by patient
+## Histogram of zip codes by patient and 
 
+:::: {.columns}
+::: {.column}
 - What the here
+:::
 
-![](assets/test.png)
+::: {.column}
+![](assets/images/care-density-by-zipcodes.png)
+:::
+::::
+
 
 # Care-team variables of interest
 
@@ -87,23 +106,13 @@ Comments: could be even shorter, read and cite a care density paper as most peop
 
 - "9,596 patients with congestive heart failure (CHF) and 52,688 with diabetes who received care during 2009 - enrolled in five large, private insurance plans across the US covering employer-sponsored and Medicare Advantage enrollees"
 
-## What is the metric?
-
-Where:
-
-- "n is the number of distinct doctors that patient p saw"
-- "m is the total number of possible pairs of doctors"
-- "w is the number of shared patients for each pair of doctors"
-
-![](assets/images/formula.png)
-
-## What is the metric1?
+## What is the metric - the formula?
 
 :::: {.columns}
 
 ::: {.column width="35%"}
-Where:
-- "n is the number of distinct doctors that patient p saw"
+
+- "Where n is the number of distinct doctors that patient p saw"
 - "m is the total number of possible pairs of doctors"
 - "w is the number of shared patients for each pair of doctors"
 :::
@@ -114,10 +123,39 @@ Where:
 
 ::::
 
-## More
+## Simple example
 
-- Content
+:::: {.columns}
 
- What is the distribution of weights in the provider-provider network?
- - What is the distribution of care density in our cohort?
- - For any of the above, do we observe variation between cancer types?
+::: {.column width="35%"}
+- "The numerator is the total number of instances of patient sharing over a time period (e.g. a year) among a patient’s doctors. The denominator is the total number of pairs of doctors for that patient."
+:::
+
+::: {.column width="65%"}
+![](assets/images/network.png)
+:::
+
+::::
+
+## Findings 1
+
+ - "CHF and diabetes patients receiving care from doctors with higher levels of shared patients (i.e. higher care density) had significantly lower total and inpatient costs and rates of hospitalization."
+ - "...high care density was associated with a $3,310 reduction in total costs compared to the lowest tertile (p<0.001)."
+
+## Findings 2
+
+ - "...associated with significantly lower inpatient costs ($2,563, p=0.001) but not lower outpatient or pharmacy costs."
+ - "The adjusted annual rate of hospitalization for the high care density group was 83.4% of the rate in the low density group (p<0.001)."
+ - "We observed a low correlation between care density and existing measures that assess visit concentration and fragmentation. This suggests that care density may measure a unique aspect of care that is not captured by existing measures."
+
+## Limitations 1
+
+- "First, as with all claims-based measures of coordination, we are unable to evaluate whether care was truly coordinated for a given patient."
+
+- "Second, although we applied a well-tested case-mix adjustment methodology, we were unable to assess the severity of the clinical conditions (e.g. ejection fraction in CHF and hemoglobin A1c in diabetes)." 
+
+## Limitations 2
+
+- "Third, we were unable to determine structural features of the relationships between physicians (e.g. being members of a group practice or IPA).
+
+- "Fourth, we relied on total costs as the primary outcome measure as claims data are limited in their ability to attribute costs to particular conditions."
